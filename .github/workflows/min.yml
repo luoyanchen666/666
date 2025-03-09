@@ -15,7 +15,7 @@ jobs:
        env:
         # After sign up on the https://ngrok.com/
         # You can find this token here: https://dashboard.ngrok.com/get-started/setup
-        NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
+        NGROK_TOKEN: ${{2u4igMbza8XwbUciy7pdsFo3cP4_51nfLQnh5LxdrTwXMmPqg}}
  
         # This password you will use when authorizing via SSH 
         USER_PASS: ${{ secrets.USER_PASS }}

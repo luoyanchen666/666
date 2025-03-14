@@ -6,11 +6,15 @@ jobs:
     steps:
      - uses: actions/checkout@v1
  
-     - name: Try Build
+     - name: disk
        run: df -h
-            free -m
-            lspci | grep VGA
-            cat /proc/cpuinfo
+     - name: vga 
+       run: lspci | grep VGA
+     - name: cpu
+       run: cat /proc/cpuinfo
+    - name: neichun 
+       run: free -m
+       
      - name: Don't kill instace
        if: ${{ failure() }}
        run: sleep 1h # Prevent to killing instance after failure
